@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  color: #011640;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 8rem 0 2rem;
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #011640;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nav {
+  width: 100%;
+  min-height: 75px;
+  z-index: 10;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1rem 1rem -1rem #37383a33;
+}
+
+nav > ul {
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+
+nav li {
+  padding: 0 .8rem;
+}
+
+nav .code {
+  color: #fff;
+  transition: color .3s ease-out;
+}
+
+nav a:hover .code {
+  color: #f2797b;
+}
+
+#welcome-section {
+  height: 100vh;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem;
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  #welcome-section {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    display: flex;
+  }
+}
+
+.welcome-img {
+  width: 300px;
+  height: auto;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 8rem;
+}
+
+#mobile-only {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  #desktop-only {
+    display: none;
+  }
+
+  #mobile-only {
+    display: initial;
+    width: 450px;
+    height: auto;
+  }
+}
+
+#subheading {
+  margin: 2rem 0;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+#subheading span {
+  color: #f2797b;
+}
+
+@media (max-width: 650px) {
+  #subheading {
+    font-size: 4rem;
+  }
+}
+
+#about {
+  padding: 10rem 5rem 5rem;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#about-container {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 850px) {
+  #about-container {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+}
+
+#my-story {
+  width: 60%;
+  padding: 0 2rem;
+}
+
+#interests-list {
+  color: #fff;
+  background-color: #011640;
+  border-radius: 5px;
+  padding: 3rem;
+}
+
+@media (max-width: 850px) {
+  #my-story {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  #interests-list {
+    margin: auto;
+  }
+}
+
+#interests-list > h3 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#projects {
+  text-align: center;
+  padding: 10rem 5rem;
+}
+
+#projects > p {
+  margin-bottom: 5rem;
+}
+
+.projects-grid {
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 1.5rem auto;
+  display: grid;
+}
+
+@media (max-width: 400px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  border: 1px solid #d9d9d980;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.card:hover {
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 0 2rem -.7rem #d9d9d9;
+}
+
+.desc {
+  text-align: left;
+  padding: 2rem;
+}
+
+.project-tile {
+  margin: 2rem 0;
+}
+
+.project-tile > a {
+  color: #f2797b;
+  font-weight: 200;
+}
+
+#contact {
+  text-align: center;
+  color: #fff;
+  background-color: #011640;
+  margin-top: 3rem;
+  padding: 10rem 5rem;
+}
+
+.contact-icon {
+  width: 2rem;
+  filter: invert();
+  padding: 1rem;
+}
+
+.contact-links {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.contact-details {
+  color: #fff;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.contact-details:hover .contact-icon {
+  filter: invert(83%) sepia(39%) saturate(6798%) hue-rotate(308deg) brightness(92%) contrast(107%);
+}
+
+.contact-details:hover {
+  color: #f2797b;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #011640;
+  padding: 2rem 0;
+}
+
+.heart:before {
+  content: "♥";
+  color: #f2797b;
+  font-size: 1.6rem;
+}
+
+footer .code {
+  color: #f2797b;
+}
+
+::selection {
+  color: #fff;
+  background: #02a1a3;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

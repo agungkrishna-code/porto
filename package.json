@@ -1,0 +1,16 @@
+{
+  "name": "porto",
+  "version": "1.0.0",
+  "source": "index.html",
+  "description": "portofolio",
+  "scripts": {
+    "portofolio": "parcel",
+    "test" : "parcel test",
+    "build": "parcel build"
+  },
+  "author": "Agung Krishna",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
