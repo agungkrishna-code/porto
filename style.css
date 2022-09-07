@@ -76,10 +76,14 @@ nav li {
 nav .code {
   color: white;
   transition: color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -ms-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
 }
 
 nav a:hover .code {
-  color: #F2797B;
+  color: #011640;
 }
 
 /* Welcome section */
