@@ -5,12 +5,12 @@
   "description": "portofolio",
   "scripts": {
     "portofolio": "parcel",
-    "test" : "parcel test",
+    "test": "parcel test",
     "build": "parcel build"
   },
   "author": "Agung Krishna",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.7.0"
+    "parcel": "^2.8.0"
   }
 }
