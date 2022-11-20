@@ -296,21 +296,6 @@ nav a:hover .code {
   text-align: center;
   /* background-color: #011640; */
   color: #fff;
-  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #9FACE6, #74EBD5 );
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 .contact-icon {
@@ -351,9 +336,12 @@ footer {
   padding: 0.5rem ;
   color: #fff;
   /* background-color: #011640; */
+}
+
+.footer-container {
   background: linear-gradient(-45deg, #23a6d5, #23d5ab, #9FACE6, #74EBD5 );
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
 }
 
 @keyframes gradient {
@@ -367,6 +355,7 @@ footer {
 		background-position: 0% 50%;
 	}
 }
+
 
 .heart::before {
   content: '\2665';
@@ -393,11 +382,14 @@ footer .code {
 
 /* Center Card img */
 .project-img {
-  height: 200px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-btn {
