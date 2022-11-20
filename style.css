@@ -58,11 +58,25 @@ img {
   top: 0;
   width: 100%;
   min-height: 75px;
-  background-color: #fff;
+  /* background-color: #fff; */
   box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
   z-index: 10;
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #9FACE6, #74EBD5 );
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 nav > ul {
   display: flex;
   flex-direction: row;
@@ -74,7 +88,7 @@ nav li {
 }
 
 nav .code {
-  color: white;
+  color: #F2797B;
   transition: color 0.3s ease-out;
   -webkit-transition: color 0.3s ease-out;
   -moz-transition: color 0.3s ease-out;
