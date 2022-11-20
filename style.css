@@ -198,11 +198,27 @@ nav a:hover .code {
 }
 
 #interests-list {
-  background-color: #011640;
+  /* background-color: #011640; */
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #9FACE6, #74EBD5 );
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
   color: #fff;
   padding: 3rem;
   border-radius: 5px;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 @media (max-width: 850px) {
   #my-story {
@@ -278,8 +294,23 @@ nav a:hover .code {
   margin-top: 3rem;
   padding: 5rem 5rem;
   text-align: center;
-  background-color: #011640;
+  /* background-color: #011640; */
   color: #fff;
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #9FACE6, #74EBD5 );
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .contact-icon {
@@ -318,9 +349,24 @@ nav a:hover .code {
 
 footer {
   text-align: center;
-  padding: 1rem ;
-  background-color: #011640;
+  padding: 0.5rem ;
   color: #fff;
+  /* background-color: #011640; */
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #9FACE6, #74EBD5 );
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .heart::before {
